@@ -1,5 +1,5 @@
 * Main Syllabus Links
-- [[http://maryash.github.io/135/2019_spring.html][Main 135/136 page]
+- [[http://maryash.github.io/135/2019_spring.html][Main 135/136 page]]
 
 
 * Lab instructions:
