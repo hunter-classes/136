@@ -1,6 +1,6 @@
 #
-#main <--- main.o <-- main.cpp
-#      \__ funcs.o <-- funcs.cpp
+# main <--- main.o <-- main.cpp
+#       \__ funcs.o <-- funcs.cpp
 
 main: main.o funcs.o
 	g++ -o main main.o funcs.o
@@ -10,3 +10,6 @@ main.o: main.cpp funcs.h
 
 funcs.o: funcs.cpp funcs.h
 	g++ -c funcs.cpp
+
+clean:
+	rm main.o funcs.o
