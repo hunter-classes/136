@@ -8,5 +8,11 @@ main.o: main.cpp funcs.h
 funcs.o: funcs.cpp funcs.h
 	g++ -c funcs.cpp
 
-cleean:
-	rm -f funcs.o main.o
+test: test.o funcs.o
+	g++ -o test test.o funcs.o
+
+test.o: test.cpp
+	g++ -c test.cpp
+
+clean:
+	rm -f funcs.o main.o test.o
