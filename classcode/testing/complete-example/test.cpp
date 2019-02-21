@@ -10,6 +10,7 @@ TEST_CASE("Testing Factoria"){
 
 
 TEST_CASE("More tests"){
+  INFO("STRING TESTS");
   std::string s = "hello";
   CHECK("hello" == "Hi");
   CHECK("hello" == "hello");
