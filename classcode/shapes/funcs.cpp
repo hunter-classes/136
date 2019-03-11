@@ -51,7 +51,7 @@ std::string cross(int h){
     result = result + line("*",1);
     result = result + "\n";
     s1++;
-    s2--;
+    s2=s2-2;
   }
  //do the bottom part
 
