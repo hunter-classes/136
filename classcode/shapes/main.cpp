@@ -12,6 +12,12 @@ int main()
 
   result = ltriangle(6);
   std::cout << result << "\n\n";
-  
+
+  result = utriangle(5);
+  std::cout << result << "\n\n";
+
+  result = cross(8);
+  std::cout << result << "\n\n";
+
   return 0;
 }
