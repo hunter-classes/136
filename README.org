@@ -1,3 +1,9 @@
+* CSCI 136 - Daedalus
+| Instructor   | Mike Zamansky                           |
+| Email        | mz631@hunter.cuny.edu                   |
+| Office       | 1001K Hunter North                      |
+| Office Hours | 11:00 - 12:00 Mon/Thu or by appointment |
+
 * Main Syllabus Links
 - [[https://maryash.github.io/135/2019_fall.html][Main 135/136 page]]
 
