@@ -17,6 +17,9 @@
 - [[http://cestlaz.github.io/stories/emacs][Using Emacs video series]]
 
 * Resources
+** C++
+- John Sterlings C++ Class Notes: http://cis.poly.edu/jsterling/cs2124/
+
 ** Unix Command Line / Shell
 1) [[https://hellowebbooks.com/learn-command-line/][Learn the Command Line]] - Mac version
 2) [[https://www.codecademy.com/learn/learn-the-command-line][Learn the Command Line]]
