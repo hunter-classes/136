@@ -5,7 +5,7 @@
 | Office Hours | 11:00 - 12:00 Mon/Thu or by appointment |
 
 * Main Syllabus Links
-- [[https://maryash.github.io/135/2019_fall.html][Main 135/136 page]]
+- [[https://maryash.github.io/135/2020_spring.html][Main 135/136 page]]
 
 
 * Lab instructions:
