@@ -1,7 +1,7 @@
 #include <iostream>
 
 #include "funcs.h"
-
+#include "morefuncs.h"
 
 int main()
 {
@@ -12,8 +12,9 @@ int main()
 
 
   c = add2(5,15);
-  std::cout << "5 + 15  is " << add2(5,15) << "\n";
-
+  std::cout << "5 + 15  is " << c << "\n";
+  c = add3(2,3,4);
+  std::cout << c << "\n";
 
   return 0;
 }

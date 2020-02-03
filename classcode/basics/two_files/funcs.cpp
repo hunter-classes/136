@@ -1,4 +1,3 @@
-
 #include "funcs.h"
 
 int inc(int a){
