@@ -12,3 +12,8 @@ funcs.o: funcs.cpp funcs.h
 morefuncs.o: morefuncs.cpp morefuncs.h
 	g++ -c morefuncs.cpp
 
+
+clean:
+	rm main.o funcs.o morefuncs.o
+
+
