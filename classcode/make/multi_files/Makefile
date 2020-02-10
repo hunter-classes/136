@@ -12,8 +12,11 @@ funcs.o: funcs.cpp funcs.h
 morefuncs.o: morefuncs.cpp morefuncs.h
 	g++ -c morefuncs.cpp
 
+help:
+	@echo "make : makes the main executable"
+	@echo "make clean : removes object files"
 
 clean:
-	rm main.o funcs.o morefuncs.o
+	rm -f main.o funcs.o morefuncs.o
 
 
