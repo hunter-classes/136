@@ -12,7 +12,7 @@ fact.o: fact.cpp fact.h
 main.o: main.cpp fact.h
 
 
-tests.o: tests.cpp doctest.h
+tests.o: tests.cpp fact.h doctest.h
 
 clean:
 	rm -f main.o tests.o fact.o
