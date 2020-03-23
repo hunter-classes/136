@@ -99,5 +99,14 @@ int main()
   // stupid_decoder(s);
   std::string decoded = decode(s,freqs);
   std::cout <<  "Decoded: " << decoded << "\n";
+
+  s = "hello world";
+  decoded = decode(s,freqs);
+  std::cout <<  "Decoded: " << decoded << "\n";
+
+  s = "mary has a little lamb";
+  decoded = decode(s,freqs);
+  std::cout <<  "Decoded: " << decoded << "\n";
+  
   return 0;
 }
