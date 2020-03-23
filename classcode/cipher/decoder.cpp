@@ -58,33 +58,38 @@ std::string decode(std::string s, double freqs[]){
   double min_dist = 1000;
   double min_index = 0;
   int i,j;
+  double test_distance;
   double d;
   
   // count the letters in our source string
   total_letters = s.length();
   for (i = 0; i < s.length(); ++i) {
     // we really want to subtract out all non letter characters
-    if (s[i]==' ')
+    if (!isalpha(s[i]))
       total_letters--;
   }
-
-  test_vecot[l] = .3
-    for (i = 0; i < 26; ++i) {
-      //    encode the new test string
-      test_string = encode(s,i);
-      //    figure out the frequencies for the new test string
-      for (j = 0; j < 26; j++) {
-	d  = 1.0*count_letters(test_string,'a'+j) / total_letters;
-	test_vector[j] = d;
-      }
-
-      //    calc its distance from the real freq vector
-      //    if it's the closest so far, save it
+  for (i = 0; i < 26; ++i) {
+    // encode the new test string
+     test_string = encode(s,i);
+     //    figure out the frequencies for the new test string
+     for (j = 0; j < 26; j++) {
+       d  = 1.0*count_letters(test_string,'a'+j) / total_letters;
+       test_vector[j] = d;
+     }
     
-    }
+     //    calc its distance from the real freq vector
+     test_distance = distance(freqs,test_vector,26);
+     // if this vector is closer, it's the new minimum so save the value and index
+     if (test_distance < min_dist){
+       min_dist = test_distance;
+       min_index = i;
+     }
 
-
-  
+  }
+  // at this point i is the index of the rotation which seems
+  // to be most like an English sentence.
+  std::string decoded = encode(s,min_index);
+  return decoded;
 }
 
 int main()
@@ -92,5 +97,7 @@ int main()
   int i;
   std::string s = "gzzgiq kgin jge cozn gt ktznayogys atqtuct zu sgtqotj";
   // stupid_decoder(s);
+  std::string decoded = decode(s,freqs);
+  std::cout <<  "Decoded: " << decoded << "\n";
   return 0;
 }
